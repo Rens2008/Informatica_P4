@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default margin */
+    /* Dark gradient background */
+    background: linear-gradient(to bottom, #2c3e50, #1a252f);
+    min-height: 100vh; /* Ensure gradient covers full height */
+    color: #ecf0f1; /* Light gray text */
+    padding: 20px; /* Add padding back */
+}
+
+h1, h2 {
+    color: #3498db; /* Brighter blue for headings */
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    color: #bdc3c7; /* Lighter gray text color */
+}
+
+ol {
+    padding-left: 40px; /* Add some indentation */
+    background-color: #34495e; /* Slightly lighter dark blue background for the list */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px; /* Rounded corners for the list background */
+    border: 1px solid #2c3e50; /* Darker border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjusted subtle shadow for dark theme */
+}
+
+li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+a {
+    color: #5dade2; /* Lighter blue for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #85c1e9; /* Even lighter blue on hover */
+}
+
+img {
+    display: block; /* Make image a block element */
+    margin: 20px auto; /* Center the image */
+    border: 3px solid #3498db; /* Blue border matching headings */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjusted shadow for dark theme */
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e; /* Border matching list background */
+    text-align: center;
+    font-size: 0.9em;
+    color: #bdc3c7; /* Lighter gray footer text */
+    background-color: #1a252f; /* Darker footer background matching gradient end */
+    padding-bottom: 20px;
+    /* Ensure footer is at the bottom if content is short */
+    /* position: sticky; */ /* Uncomment if you want a sticky footer */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
