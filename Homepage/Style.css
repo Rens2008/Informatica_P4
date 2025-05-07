@@ -1,67 +1,105 @@
 body {
     font-family: sans-serif;
-    margin: 0; /* Remove default margin */
-    /* Dark gradient background */
+    margin: 0; 
     background: linear-gradient(to bottom, #2c3e50, #1a252f);
-    min-height: 100vh; /* Ensure gradient covers full height */
-    color: #ecf0f1; /* Light gray text */
-    padding: 20px; /* Add padding back */
+    min-height: 100vh; 
+    color: #ecf0f1; 
+    padding: 20px; 
+}
+
+.header {
+    background-color: #1a252f; /* Darker background for header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* Accent border */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.navbar {
+    text-align: center; /* Center the navigation links */
+    margin-bottom: 20px; /* Space below navbar */
+    padding: 10px 0;
+    background-color: #34495e; /* Background for navbar */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    margin: 0 15px; /* Spacing between nav links */
+    color: #ecf0f1; /* Light color for nav links */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #3498db; /* Accent color on hover */
+    text-decoration: none; /* No underline for navbar links on hover, personal preference */
 }
 
 h1, h2 {
-    color: #3498db; /* Brighter blue for headings */
+    color: #3498db; 
     text-align: center;
+}
+
+/* Specific styling for h1 within the header to override general h1 if needed */
+.header h1 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space between h1 and p in header */
+    color: #ecf0f1; /* Lighter color for header h1 */
+}
+
+.header p {
+    color: #bdc3c7; /* Subdued color for paragraph in header */
+    font-size: 1.1em;
 }
 
 p {
     line-height: 1.6;
-    color: #bdc3c7; /* Lighter gray text color */
+    color: #bdc3c7;
 }
 
 ol {
-    padding-left: 40px; /* Add some indentation */
-    background-color: #34495e; /* Slightly lighter dark blue background for the list */
+    padding-left: 40px; 
+    background-color: #34495e; 
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 5px; /* Rounded corners for the list background */
-    border: 1px solid #2c3e50; /* Darker border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjusted subtle shadow for dark theme */
+    border-radius: 5px; 
+    border: 1px solid #2c3e50; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px;
 }
 
 a {
-    color: #5dade2; /* Lighter blue for links */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    color: #5dade2; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
 a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #85c1e9; /* Even lighter blue on hover */
+    text-decoration: underline; 
+    color: #85c1e9; 
 }
 
 img {
-    display: block; /* Make image a block element */
-    margin: 20px auto; /* Center the image */
-    border: 3px solid #3498db; /* Blue border matching headings */
-    border-radius: 8px; /* Slightly more rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjusted shadow for dark theme */
+    display: block;
+    margin: 20px auto; 
+    border: 3px solid #3498db; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 footer {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #34495e; /* Border matching list background */
+    border-top: 1px solid #34495e; 
     text-align: center;
     font-size: 0.9em;
-    color: #bdc3c7; /* Lighter gray footer text */
-    background-color: #1a252f; /* Darker footer background matching gradient end */
+    color: #bdc3c7; 
+    background-color: #1a252f; 
     padding-bottom: 20px;
-    /* Ensure footer is at the bottom if content is short */
-    /* position: sticky; */ /* Uncomment if you want a sticky footer */
-    /* bottom: 0; */
-    /* width: 100%; */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); 
 }
