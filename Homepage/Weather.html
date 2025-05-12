@@ -26,6 +26,7 @@
     <button onclick="scanFile()">Scan File</button>
     <div id="scanStatus" style="margin-top: 10px;"></div>
 
+    <script src="../config.js"></script> 
     <script>
         function scanFile() {
             const fileInput = document.getElementById('fileInput');
@@ -65,7 +66,7 @@
 
             xhr.open("POST", "https://api.cloudmersive.com/virus/scan/file");
 
-            xhr.setRequestHeader("Apikey", "ba661b46-713a-47ce-985a-89d4d55aff72"); 
+            xhr.setRequestHeader("Apikey", CLOUDMERSIVE_API_KEY); 
 
             xhr.onload = function() {
                 if (xhr.status === 200) {
