@@ -1,0 +1,1 @@
+const CLOUDMERSIVE_API_KEY = "ba661b46-713a-47ce-985a-89d4d55aff72";
