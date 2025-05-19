@@ -2,33 +2,60 @@
 <!--This is the homepage of my site-->
 <!--Made by Rens Windhorst-->
 <!DOCTYPE html>
-<html>
-    <head>
-    <html lang="nl"></html>
+<html lang="nl">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rens Game site">
     <meta name="keywords" content="games, HTML, CSS, JavaScript">
     <meta name="author" content="Rens Windhorst">
     <link rel="stylesheet" href="Style.css">
-    </head>
-
-<!--The code beneath is for the header of the site-->
+    <title>Rens WebDev site</title>
+</head>
+<body>
+    <!-- Header -->
     <div class="header">
-        <title>Rens Game site</title>
-        <h1>Homepage</h1>
-        <p>Op deze site zul je vele spellen vinden</p>
+        <h1>Welkom op de Homepage</h1>
+        <p>Op deze site vind je vele handige tools!</p>
     </div>
+    <!-- Navbar -->
     <div class="navbar">
         <a href="Index.html">Home</a>
-        <a href="../Games/Games.html">Games</a>
-        <a href="Weather.html">Weer</a>
+        <a href="Sheets.html">Cheat Sheets</a>
+        <a href="Bronvermelding.html">Bronvermelding</a>
     </div>
-    <img src="giphy.gif" alt="Bever" width="300" height="200">
-<!--The code beneath is for the footer of the site-->
+    <main>
+        <section class="welkom-blok" style="text-align:center; margin-bottom: 32px;">
+            <h2>Welkom!</h2>
+            <p>Deze website is jouw startpunt voor handige programmeerhulpmiddelen, uitgebreide cheat sheets en een overzicht van de beste bronnen voor webdevelopment.</p>
+            <a href="Sheets.html" class="cta-btn">Bekijk de Cheat Sheets</a>
+            <a href="Bronvermelding.html" class="cta-btn cta-secondary">Bronvermelding</a>
+        </section>
+        <img src="giphy.gif" alt="Dansende Bever" width="300" height="200" style="display:block;margin:auto;">
+        <section style="text-align:center;">
+            <h2>De grootste fast-food ketens</h2>
+            <ol style="display:inline-block;text-align:left;">
+                <li>McDonald's</li>
+                <li>Burger King</li>
+                <li>KFC</li>
+                <li>Subway</li>
+                <li>Domino's</li>
+            </ol>
+        </section>
+        <section class="site-overzicht" style="margin-top:40px;">
+            <h2>Wat vind je op deze site?</h2>
+            <ul style="max-width:500px;margin:0 auto;text-align:left;">
+                <li><b>Cheat Sheets:</b> Snel overzicht van de belangrijkste code voor HTML, CSS, JavaScript, Python, en meer.</li>
+                <li><b>Bronvermelding:</b> Een uitgebreide lijst met de beste bronnen en uitlegvideo's.</li>
+                <li><b>Handige tools:</b> Zoekbalken, voorbeelden en meer om je te helpen leren programmeren.</li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer -->
     <footer>
-     <p>Gemaakt met vscode</p>
-     <p>&copy; 2025 Rens Windhorst. Alle rechten voorbehouden.</p>
+        <p>Gemaakt met VS Code</p>
+        <p>&copy; 2025 Rens Windhorst. Alle rechten voorbehouden.</p>
     </footer>
+</body>
 </html>
 

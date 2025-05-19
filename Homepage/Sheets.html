@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheat Sheets voor Programmeertalen">
+    <meta name="author" content="Rens Windhorst">
+    <link rel="stylesheet" href="Style.css">
+    <title>Cheat Sheets</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Cheat Sheets voor Programmeertalen</h1>
+        <p>Handige overzichten voor snel leren en opzoeken!</p>
+    </div>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="Sheets.html">Cheat Sheets</a>
+        <a href="Bronvermelding.html">Bronvermelding</a>
+    </div>
+    <main class="cheatsheet-grid">
+        <div class="cheatsheet-intro">
+            <input type="text" id="cheatSearch" placeholder="Zoek in alle cheat sheets..." onkeyup="filterCheatSheets()">
+        </div>
+        <section class="cheat-card" data-lang="html">
+            <h2>HTML Cheat Sheet</h2>
+            <ul>
+                <li><b>&lt;h1&gt;...&lt;/h1&gt;</b> - Koptekst</li>
+                <li><b>&lt;p&gt;...&lt;/p&gt;</b> - Paragraaf</li>
+                <li><b>&lt;a href="url"&gt;...&lt;/a&gt;</b> - Link</li>
+                <li><b>&lt;img src="url" alt="tekst"&gt;</b> - Afbeelding</li>
+                <li><b>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</b> - Ongeordende lijst</li>
+                <li><b>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</b> - Geordende lijst</li>
+                <li><b>&lt;input type="text"&gt;</b> - Tekstinvoer</li>
+                <li><b>&lt;form&gt;...&lt;/form&gt;</b> - Formulier</li>
+                <li><b>&lt;table&gt;...&lt;/table&gt;</b> - Tabel</li>
+                <li><b>&lt;div&gt;...&lt;/div&gt;</b> - Container</li>
+                <li><b>&lt;span&gt;...&lt;/span&gt;</b> - Inline container</li>
+                <li><b>&lt;meta charset="UTF-8"&gt;</b> - Karakterset</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="css">
+            <h2>CSS Cheat Sheet</h2>
+            <ul>
+                <li><b>color</b>: tekstkleur</li>
+                <li><b>background-color</b>: achtergrondkleur</li>
+                <li><b>margin</b>: buitenruimte</li>
+                <li><b>padding</b>: binnenruimte</li>
+                <li><b>border</b>: rand</li>
+                <li><b>display: flex;</b> - Flexbox layout</li>
+                <li><b>display: grid;</b> - Grid layout</li>
+                <li><b>font-size</b>: lettergrootte</li>
+                <li><b>box-shadow</b>: schaduw</li>
+                <li><b>border-radius</b>: afgeronde hoeken</li>
+                <li><b>transition</b>: animatie-overgang</li>
+                <li><b>:hover</b> - Hover effect</li>
+                <li><b>position: absolute;</b> - Absolute positionering</li>
+                <li><b>z-index</b>: stapelvolgorde</li>
+                <li><b>overflow: hidden;</b> - Overloop verbergen</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="javascript js">
+            <h2>JavaScript Cheat Sheet</h2>
+            <ul>
+                <li><b>let x = 5;</b> - Variabele declareren</li>
+                <li><b>const PI = 3.14;</b> - Constante</li>
+                <li><b>function naam() { ... }</b> - Functie declareren</li>
+                <li><b>console.log('Hallo');</b> - Print naar console</li>
+                <li><b>document.getElementById('id')</b> - Element selecteren</li>
+                <li><b>if (voorwaarde) { ... }</b> - Voorwaardelijke logica</li>
+                <li><b>for (let i = 0; i &lt; 5; i++) { ... }</b> - For-loop</li>
+                <li><b>let arr = [1,2,3]; arr.forEach(fn);</b> - Array iteratie</li>
+                <li><b>addEventListener('click', fn)</b> - Event listener</li>
+                <li><b>fetch(url).then(...)</b> - Data ophalen</li>
+                <li><b>try { ... } catch(e) { ... }</b> - Foutafhandeling</li>
+                <li><b>setTimeout(fn, 1000);</b> - Timer</li>
+                <li><b>JSON.parse(json)</b> - JSON omzetten naar object</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="python py">
+            <h2>Python Cheat Sheet</h2>
+            <ul>
+                <li><b>x = 5</b> - Variabele</li>
+                <li><b>def functie():</b> - Functie declareren</li>
+                <li><b>print('Hallo')</b> - Printen</li>
+                <li><b>if voorwaarde:</b> - Voorwaardelijke logica</li>
+                <li><b>for i in range(5):</b> - For-loop</li>
+                <li><b>list = [1,2,3]</b> - Lijst</li>
+                <li><b>for item in list:</b> - Iteratie over lijst</li>
+                <li><b>import math</b> - Module importeren</li>
+                <li><b>try: ... except:</b> - Foutafhandeling</li>
+                <li><b>with open('bestand.txt') as f:</b> - Bestand openen</li>
+                <li><b>lambda x: x+1</b> - Anonieme functie</li>
+                <li><b>dict = {'a': 1}</b> - Dictionary</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="c">
+            <h2>C Cheat Sheet</h2>
+            <ul>
+                <li><b>#include &lt;stdio.h&gt;</b> - Standaard I/O</li>
+                <li><b>int main() { ... }</b> - Main functie</li>
+                <li><b>printf("Hello");</b> - Printen</li>
+                <li><b>int x = 5;</b> - Variabele</li>
+                <li><b>for(int i=0; i&lt;5; i++) { ... }</b> - For-loop</li>
+                <li><b>if(x &gt; 0) { ... }</b> - Voorwaardelijke logica</li>
+                <li><b>scanf("%d", &x);</b> - Invoer</li>
+                <li><b>return 0;</b> - Functie return</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="java">
+            <h2>Java Cheat Sheet</h2>
+            <ul>
+                <li><b>public class Main { ... }</b> - Klasse</li>
+                <li><b>public static void main(String[] args)</b> - Main methode</li>
+                <li><b>System.out.println("Hallo");</b> - Printen</li>
+                <li><b>int x = 5;</b> - Variabele</li>
+                <li><b>for(int i=0; i&lt;5; i++) { ... }</b> - For-loop</li>
+                <li><b>if(x &gt; 0) { ... }</b> - Voorwaardelijke logica</li>
+                <li><b>Scanner sc = new Scanner(System.in);</b> - Invoer</li>
+                <li><b>ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();</b> - Lijst</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="php">
+            <h2>PHP Cheat Sheet</h2>
+            <ul>
+                <li><b>&lt;?php ... ?&gt;</b> - PHP blok</li>
+                <li><b>$x = 5;</b> - Variabele</li>
+                <li><b>echo "Hallo";</b> - Printen</li>
+                <li><b>if($x &gt; 0) { ... }</b> - Voorwaardelijke logica</li>
+                <li><b>for($i=0; $i&lt;5; $i++) { ... }</b> - For-loop</li>
+                <li><b>function naam() { ... }</b> - Functie</li>
+                <li><b>$_GET['param']</b> - URL parameter</li>
+                <li><b>include 'bestand.php';</b> - Bestand includen</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="sql">
+            <h2>SQL Cheat Sheet</h2>
+            <ul>
+                <li><b>SELECT * FROM tabel;</b> - Selecteer alles</li>
+                <li><b>INSERT INTO tabel (kolom) VALUES (waarde);</b> - Voeg toe</li>
+                <li><b>UPDATE tabel SET kolom=waarde WHERE ...;</b> - Update</li>
+                <li><b>DELETE FROM tabel WHERE ...;</b> - Verwijder</li>
+                <li><b>CREATE TABLE naam (...);</b> - Maak tabel</li>
+                <li><b>ALTER TABLE naam ADD kolom datatype;</b> - Wijzig tabel</li>
+                <li><b>DROP TABLE naam;</b> - Verwijder tabel</li>
+            </ul>
+        </section>
+        <section class="cheat-card" data-lang="typescript ts">
+            <h2>TypeScript Cheat Sheet</h2>
+            <ul>
+                <li><b>let x: number = 5;</b> - Variabele met type</li>
+                <li><b>function greet(name: string): void { ... }</b> - Functie met types</li>
+                <li><b>interface Persoon { naam: string; leeftijd: number; }</b> - Interface</li>
+                <li><b>type ID = number | string;</b> - Type alias</li>
+                <li><b>class Auto { ... }</b> - Klasse</li>
+                <li><b>const arr: string[] = [];</b> - Array met type</li>
+                <li><b>enum Kleur { Rood, Groen, Blauw }</b> - Enum</li>
+                <li><b>let onbekend: unknown;</b> - Onbekend type</li>
+                <li><b>as</b> - Type casting (<b>x as number</b>)</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+    function filterCheatSheets() {
+        const input = document.getElementById('cheatSearch').value.toLowerCase();
+        document.querySelectorAll('.cheat-card').forEach(card => {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(input) ? '' : 'none';
+        });
+    }
+    </script>
+    <footer>
+        <p>Gemaakt met VS Code</p>
+        <p>&copy; 2025 Rens Windhorst. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

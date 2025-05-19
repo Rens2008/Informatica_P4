@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bronvermelding en handige video's voor webdevelopment">
+    <meta name="author" content="Rens Windhorst">
+    <link rel="stylesheet" href="Style.css">
+    <title>Bronvermelding & Video's</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Bronvermelding & Handige Video's</h1>
+        <p>Een overzicht van nuttige bronnen en uitlegvideo's voor webdevelopment.</p>
+    </div>
+    <div class="navbar" aria-label="Hoofdnavigatie">
+        <a href="Index.html">Home</a>
+        <a href="Sheets.html">Cheat Sheets</a>
+        <a href="Bronvermelding.html">Bronvermelding</a>
+    </div>
+    <main style="max-width: 900px; margin: 0 auto;">
+        <section class="cheat-card">
+            <h2>Bronnen voor Webdevelopment</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/nl/" target="_blank">MDN Web Docs</a> - Complete documentatie voor HTML, CSS en JavaScript.</li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - Praktische tutorials en voorbeelden.</li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> - Tips, tricks en uitleg over CSS.</li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - Gratis interactieve cursussen voor webdevelopment.</li>
+                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> - Vraag en antwoord community voor programmeurs.</li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a> - Tutorials en uitleg voor veel programmeertalen.</li>
+                <li><a href="https://www.youtube.com/@WebDevSimplified" target="_blank">Web Dev Simplified (YouTube)</a> - Korte en duidelijke uitlegvideo's.</li>
+                <li><a href="https://www.youtube.com/@TheNetNinja" target="_blank">The Net Ninja (YouTube)</a> - Uitgebreide playlists over webtechnologieën.</li>
+            </ul>
+        </section>
+        <section class="cheat-card">
+            <h2>Uitleg: HTML Search Bar maken</h2>
+            <p>Deze zoekbalk wordt gebruikt op de Cheat Sheets pagina van deze site. Je kunt hiermee live filteren op alle programmeertalen:</p>
+            <div style="background:#2c3e50;padding:15px;border-radius:8px;text-align:left;margin-bottom:15px;">
+                <h3 style="color:#4fc3f7;margin-top:0;">HTML</h3>
+                <pre style="background:#1a252f;padding:10px;border-radius:5px;overflow-x:auto;color:#ecf0f1;">
+&lt;input type="text" id="cheatSearch" placeholder="Zoek in alle cheat sheets..." onkeyup="filterCheatSheets()"&gt;
+</pre>
+                <h3 style="color:#4fc3f7;margin-top:15px;">JavaScript</h3>
+                <pre style="background:#1a252f;padding:10px;border-radius:5px;overflow-x:auto;color:#ecf0f1;">
+function filterCheatSheets() {
+    const input = document.getElementById('cheatSearch').value.toLowerCase();
+    document.querySelectorAll('.cheat-card').forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? '' : 'none';
+    });
+}
+</pre>
+            </div>
+            <p>Meer uitleg over zoekbalken vind je op <a href="https://www.w3schools.com/howto/howto_js_filter_lists.asp" target="_blank">W3Schools: Filter List</a>.</p>
+        </section>
+        <section class="cheat-card">
+            <h2>Uitleg: CSS Button Hover Effect</h2>
+            <p>Dit is het hover-effect van de blauwe knoppen op deze site:</p>
+            <div style="background:#2c3e50;padding:15px;border-radius:8px;text-align:left;margin-bottom:15px;">
+                <h3 style="color:#4fc3f7;margin-top:0;">HTML</h3>
+                <pre style="background:#1a252f;padding:10px;border-radius:5px;overflow-x:auto;color:#ecf0f1;">
+&lt;a href="#" class="cta-btn"&gt;Klik hier&lt;/a&gt;
+</pre>
+                <h3 style="color:#4fc3f7;margin-top:15px;">CSS</h3>
+                <pre style="background:#1a252f;padding:10px;border-radius:5px;overflow-x:auto;color:#ecf0f1;">
+.cta-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 4px 12px rgba(52,152,219,0.25);
+}
+</pre>
+            </div>
+            <p>Meer uitleg over CSS hover effecten vind je op <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">MDN Web Docs: :hover CSS pseudo-class</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Gemaakt met VS Code</p>
+        <p>&copy; 2025 Rens Windhorst. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
