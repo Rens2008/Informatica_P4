@@ -9,18 +9,20 @@
     <title>Cheat Sheets</title>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Cheat Sheets voor Programmeertalen</h1>
         <p>Handige overzichten voor snel leren en opzoeken!</p>
-    </div>
-    <div class="navbar">
+    </header>
+    <nav class="navbar" aria-label="Hoofdnavigatie">
         <a href="Index.html">Home</a>
-        <a href="Sheets.html">Cheat Sheets</a>
+        <a href="Sheets.html" aria-current="page">Cheat Sheets</a>
         <a href="Bronvermelding.html">Bronvermelding</a>
-    </div>
+    </nav>
     <main class="cheatsheet-grid">
-        <div class="cheatsheet-intro">
-            <input type="text" id="cheatSearch" placeholder="Zoek in alle cheat sheets..." onkeyup="filterCheatSheets()">
+        <div class="search-container">
+            <label for="cheatSearch" class="visually-hidden">Zoek in cheat sheets</label>
+            <input type="text" id="cheatSearch" placeholder="Zoek in alle cheat sheets..." aria-describedby="search-help">
+            <small id="search-help" class="search-help">Type een programmeertaal of zoekterm om te filteren</small>
         </div>
         <section class="cheat-card" data-lang="html">
             <h2>HTML Cheat Sheet</h2>
@@ -160,15 +162,7 @@
             </ul>
         </section>
     </main>
-    <script>
-    function filterCheatSheets() {
-        const input = document.getElementById('cheatSearch').value.toLowerCase();
-        document.querySelectorAll('.cheat-card').forEach(card => {
-            const text = card.innerText.toLowerCase();
-            card.style.display = text.includes(input) ? '' : 'none';
-        });
-    }
-    </script>
+    <script src="js/search.js"></script>
     <footer>
         <p>Gemaakt met VS Code</p>
         <p>&copy; 2025 Rens Windhorst. Alle rechten voorbehouden.</p>

@@ -1,6 +1,6 @@
 # Rens Windhorst - Informatica P4 Homepage
 
-Welkom bij de moderne programmeerhulpsite van Rens Windhorst! Deze site is ontworpen als eindproject voor Informatica P4 en biedt een centrale plek voor handige tools, uitgebreide cheat sheets en een overzicht van de beste bronnen voor webdevelopment.
+Op deze site vind je cheat sheets voor vele programmeer talen.
 
 ## 🌑 Features
 

@@ -6,35 +6,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rens Game site">
-    <meta name="keywords" content="games, HTML, CSS, JavaScript">
+    <meta name="description" content="Moderne programmeerhulpsite met cheat sheets voor HTML, CSS, JavaScript, Python en meer. Informatica P4 eindproject van Rens Windhorst.">
+    <meta name="keywords" content="programming, cheat sheets, HTML, CSS, JavaScript, Python, webdevelopment, informatica">
     <meta name="author" content="Rens Windhorst">
     <link rel="stylesheet" href="Style.css">
-    <title>Rens WebDev site</title>
+    <title>Informatica P4 Homepage - Rens Windhorst</title>
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
+    <header class="header">
         <h1>Welkom op de Homepage</h1>
         <p>Op deze site vind je vele handige tools!</p>
-    </div>
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="Index.html">Home</a>
+    </header>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Hoofdnavigatie">
+        <a href="Index.html" aria-current="page">Home</a>
         <a href="Sheets.html">Cheat Sheets</a>
         <a href="Bronvermelding.html">Bronvermelding</a>
-    </div>
+    </nav>
     <main>
-        <section class="welkom-blok" style="text-align:center; margin-bottom: 32px;">
+        <section class="welcome-section">
             <h2>Welkom!</h2>
             <p>Deze website is jouw startpunt voor handige programmeerhulpmiddelen, uitgebreide cheat sheets en een overzicht van de beste bronnen voor webdevelopment.</p>
-            <a href="Sheets.html" class="cta-btn">Bekijk de Cheat Sheets</a>
-            <a href="Bronvermelding.html" class="cta-btn cta-secondary">Bronvermelding</a>
+            <div class="cta-buttons">
+                <a href="Sheets.html" class="cta-btn">Bekijk de Cheat Sheets</a>
+                <a href="Bronvermelding.html" class="cta-btn cta-secondary">Bronvermelding</a>
+            </div>
         </section>
-        <img src="giphy.gif" alt="Dansende Bever" width="300" height="200" style="display:block;margin:auto;">
-        <section style="text-align:center;">
+        
+        <div class="hero-image">
+            <img src="giphy.gif" alt="Animatie van een dansende bever" width="300" height="200">
+        </div>
+        
+        <section class="demo-content">
             <h2>De grootste fast-food ketens</h2>
-            <ol style="display:inline-block;text-align:left;">
+            <ol class="demo-list">
                 <li>McDonald's</li>
                 <li>Burger King</li>
                 <li>KFC</li>
@@ -42,12 +48,13 @@
                 <li>Domino's</li>
             </ol>
         </section>
-        <section class="site-overzicht" style="margin-top:40px;">
+        
+        <section class="site-overview">
             <h2>Wat vind je op deze site?</h2>
-            <ul style="max-width:500px;margin:0 auto;text-align:left;">
-                <li><b>Cheat Sheets:</b> Snel overzicht van de belangrijkste code voor HTML, CSS, JavaScript, Python, en meer.</li>
-                <li><b>Bronvermelding:</b> Een uitgebreide lijst met de beste bronnen en uitlegvideo's.</li>
-                <li><b>Handige tools:</b> Zoekbalken, voorbeelden en meer om je te helpen leren programmeren.</li>
+            <ul class="feature-list">
+                <li><strong>Cheat Sheets:</strong> Snel overzicht van de belangrijkste code voor HTML, CSS, JavaScript, Python, en meer.</li>
+                <li><strong>Bronvermelding:</strong> Een uitgebreide lijst met de beste bronnen en uitlegvideo's.</li>
+                <li><strong>Handige tools:</strong> Zoekbalken, voorbeelden en meer om je te helpen leren programmeren.</li>
             </ul>
         </section>
     </main>
