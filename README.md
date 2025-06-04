@@ -224,8 +224,8 @@ Informatica_P4/
 **Vak**: Informatica P4  
 **Tools gebruikt**: 
 - Visual Studio Code (development)
-- HTML5 (structuur)
-- CSS3 (styling & layout)  
+- HTML (structuur)
+- CSS (styling & layout)  
 - Vanilla JavaScript (interactiviteit)
 - Git (versiebeheer)
 
@@ -233,6 +233,3 @@ Informatica_P4/
 **Browser compatibiliteit**: Alle moderne browsers
 **Responsive design**: Desktop, tablet en mobiel
 
-> **Leerervaring**: Dit project demonstreert moderne webdevelopment technieken including CSS Grid, Flexbox, JavaScript DOM manipulation, en responsive design principes.
->
-> Veel programmeerplezier! 🚀
