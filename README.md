@@ -1,45 +1,45 @@
 # Rens Windhorst - Informatica P4 Homepage
 
-Op deze site vind je cheat sheets voor vele programmeer talen.
+Op deze site vind je handige lijstjes voor heel veel programmeer talen.
 
-## 🌑 Features
+## Wat je hier kan vinden
 
-*   **Donker thema**: Modern, rustig en prettig voor de ogen
-*   **Cheat Sheets**: Snel overzicht van de belangrijkste code voor HTML, CSS, JavaScript, Python, TypeScript, SQL, Java, C, PHP en meer
-*   **Live zoekbalk**: Filter direct door alle cheat sheets met JavaScript
-*   **Bronvermelding**: Uitgebreide lijst met de beste bronnen, uitleg en codevoorbeelden
-*   **Responsief ontwerp**: Werkt op desktop, tablet en mobiel door CSS Grid en Flexbox
-*   **Moderne animaties**: Hover effecten en transitions voor een professionele uitstraling
+*   **Donker thema**: Ziet er cool uit en is rustig voor je ogen.
+*   **Cheat Sheets**: Een snelle lijst met de belangrijkste code voor HTML, CSS, JavaScript, Python, TypeScript, SQL, Java, C, PHP en nog meer.
+*   **Live zoekbalk**: Je kan meteen zoeken in alle cheat sheets met JavaScript.
+*   **Bronnen**: Een lijst met goede websites en uitleg.
+*   **Werkt overal**: De site ziet er goed uit op je computer, tablet en telefoon.
+*   **Coole animaties**: Dingen bewegen als je er met je muis overheen gaat.
 
-## 📄 Pagina's & Functionaliteiten
+## Pagina's en wat ze doen
 
-### 🏠 Index.html - Homepage
-**Functie**: Startpagina met welkomstbericht en navigatie naar andere secties.
+### Index.html - Homepage
+**Wat het is**: De eerste pagina die je ziet met een welkomstbericht en knoppen naar andere delen van de site.
 
-**Belangrijke code-onderdelen**:
-- **HTML structuur**: Semantische HTML5 tags (`<main>`, `<section>`, `<header>`)
-- **Navigatie**: Sticky navbar die bovenaan blijft bij scrollen
-- **CTA buttons**: Call-to-action knoppen met hover effecten
-- **Responsive afbeelding**: GIF met automatische grootte-aanpassing
+**Belangrijke code**:
+- **HTML structuur**: Speciale HTML5-tags zoals `<main>`, `<section>`, `<header>`.
+- **Menu**: Een menu dat bovenaan blijft staan als je naar beneden scrollt.
+- **Knoppen**: Knoppen die iets doen als je er met je muis overheen gaat.
+- **Plaatje**: Een GIF-plaatje dat vanzelf groter of kleiner wordt.
 
-**HTML head configuratie**:
+**HTML head instellingen**:
 ```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="Style.css">
 ```
-Dit zorgt voor juiste karakterset, mobiele weergave en styling.
+Dit zorgt ervoor dat alles goed werkt op je telefoon en dat de site er mooi uitziet.
 
-### 📋 Sheets.html - Cheat Sheets
-**Functie**: Interactieve pagina met programmeertaal overzichten en zoekfunctionaliteit.
+### Sheets.html - Cheat Sheets
+**Wat het is**: Een pagina waar je lijstjes met code kan zien en waar je kan zoeken.
 
-**Belangrijke code-onderdelen**:
-- **CSS Grid Layout**: Automatische kaart-indeling met `grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))`
-- **Live zoekfunctie**: JavaScript functie die real-time filtert
-- **Data attributen**: `data-lang` voor betere zoekresultaten
-- **Responsive design**: Kaarten passen zich aan aan schermgrootte
+**Belangrijke code**:
+- **CSS Grid Layout**: De kaartjes met code passen zich automatisch aan met `grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))`
+- **Live zoekfunctie**: Een JavaScript dingetje dat meteen zoekt terwijl je typt.
+- **Data attributen**: `data-lang` om beter te kunnen zoeken.
+- **Werkt op elk scherm**: De kaartjes worden groter of kleiner, net wat past.
 
-**JavaScript zoekfunctionaliteit**:
+**JavaScript zoekfunctie**:
 ```javascript
 function filterCheatSheets() {
     const input = document.getElementById('cheatSearch').value.toLowerCase();
@@ -50,32 +50,32 @@ function filterCheatSheets() {
 }
 ```
 **Hoe het werkt**:
-1. Haalt de zoekterm op uit het input veld
-2. Zet alles om naar kleine letters voor case-insensitive zoeken
-3. Doorloopt alle cheat sheet kaarten
-4. Toont/verbergt kaarten op basis van of ze de zoekterm bevatten
+1. Kijkt wat je in het zoekvak typt.
+2. Maakt alles kleine letters zodat het niet uitmaakt of je met hoofdletters typt.
+3. Kijkt naar alle kaartjes met code.
+4. Laat alleen de kaartjes zien waar jouw zoekwoord in staat.
 
-### 📚 Bronvermelding.html - Bronnen & Uitleg
-**Functie**: Overzicht van nuttige links en gedetailleerde code-uitleg.
+### Bronvermelding.html - Bronnen & Uitleg
+**Wat het is**: Een lijst met handige links en meer uitleg over de code.
 
-**Belangrijke code-onderdelen**:
-- **External links**: `target="_blank"` voor openen in nieuw tabblad
-- **Code voorbeelden**: `<pre>` tags voor code formatting
-- **Embedded content**: Uitleg van de zoekbalk en button effecten
-- **Aria labels**: `aria-label="Hoofdnavigatie"` voor toegankelijkheid
+**Belangrijke code**:
+- **Links naar andere sites**: `target="_blank"` zodat ze in een nieuw tabblad openen.
+- **Code voorbeelden**: `<pre>` tags zodat de code er netjes uitziet.
+- **Uitleg**: Over hoe de zoekbalk en de knop-effecten werken.
+- **Aria labels**: `aria-label="Hoofdnavigatie"` zodat mensen met een screenreader het ook snappen.
 
-## 🎨 Style.css - Styling & Design
+## Style.css - Kleuren & Vormgeving
 
 ### CSS Variabelen & Thema
-**Kleurenschema**:
-- **Primaire achtergrond**: `linear-gradient(120deg, #181f2a 0%, #232b39 100%)`
-- **Accent kleur**: `#4fc3f7` (lichtblauw)
+**Kleuren**:
+- **Achtergrond**: `linear-gradient(120deg, #181f2a 0%, #232b39 100%)` (een soort donkerblauw/grijs)
+- **Belangrijke kleur**: `#4fc3f7` (lichtblauw)
 - **Tekst kleur**: `#ecf0f1` (lichtgrijs)
 - **Kaart achtergrond**: `#232b39` (donkergrijs)
 
-### Belangrijke CSS Technieken
+### Belangrijke CSS Trucjes
 
-**1. Flexbox Navigatie**:
+**1. Flexbox Menu**:
 ```css
 .navbar {
     display: flex;
@@ -86,7 +86,7 @@ function filterCheatSheets() {
     z-index: 10;
 }
 ```
-**Functie**: Centreert navigatie-items met gelijke ruimte ertussen en blijft bovenaan de pagina.
+**Wat het doet**: Zet de menu-items in het midden met ruimte ertussen en blijft bovenaan de pagina.
 
 **2. CSS Grid Layout**:
 ```css
@@ -96,7 +96,7 @@ function filterCheatSheets() {
     gap: 40px;
 }
 ```
-**Functie**: Maakt automatisch responsive grid die zich aanpast aan schermgrootte.
+**Wat het doet**: Maakt een soort rooster dat vanzelf goed staat op elk scherm.
 
 **3. Hover Animaties**:
 ```css
@@ -106,13 +106,13 @@ function filterCheatSheets() {
     border-color: #4fc3f7;
 }
 ```
-**Functie**: Tilt kaarten omhoog met schaalvergroting en schaduw bij hover.
+**Wat het doet**: De kaartjes gaan een beetje omhoog en worden groter als je er met je muis op staat.
 
-**4. Smooth Transitions**:
+**4. Soepele Overgangen**:
 ```css
 transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
 ```
-**Functie**: Zorgt voor vloeiende animaties tussen verschillende states.
+**Wat het doet**: Zorgt dat de animaties er mooi en soepel uitzien.
 
 **5. Responsive Design**:
 ```css
@@ -125,111 +125,111 @@ transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
     }
 }
 ```
-**Functie**: Past layout aan voor mobiele apparaten.
+**Wat het doet**: Zorgt dat de site er anders uitziet op kleine schermen (zoals je telefoon).
 
-## ⚙️ Technische Implementatie
+## Hoe het technisch werkt
 
-### HTML5 Semantiek
-- `<main>`: Hoofdinhoud van elke pagina
-- `<section>`: Logische secties binnen de content
-- `<nav>`: Navigatie elementen
-- `<header>`: Paginakopteksten
-- `<footer>`: Voettekst informatie
+### HTML5 Dingen
+- `<main>`: Het belangrijkste deel van elke pagina.
+- `<section>`: Stukjes content die bij elkaar horen.
+- `<nav>`: Voor de menu's.
+- `<header>`: De titel bovenaan de pagina.
+- `<footer>`: Info onderaan de pagina.
 
-### CSS Methodologie
-- **Mobile-first design**: Basis styling voor mobiel, uitbreidingen voor desktop
-- **Component-based**: Herbruikbare CSS classes (`.cheat-card`, `.cta-btn`)
-- **Progressive enhancement**: Basis functionaliteit werkt altijd, animaties zijn een toevoeging
+### CSS Manier van werken
+- **Eerst voor mobiel**: De basis is voor telefoons, daarna extra dingen voor computers.
+- **In stukjes**: Herbruikbare CSS-klassen (zoals `.cheat-card`, `.cta-btn`).
+- **Steeds beter**: De basis werkt altijd, coole animaties zijn extra.
 
-### JavaScript Functionaliteit
-- **DOM Manipulation**: `document.getElementById()` en `querySelectorAll()`
-- **Event Handling**: `onkeyup` event voor real-time zoeken
-- **Array Methods**: `forEach()` voor iteratie over elementen
-- **String Methods**: `toLowerCase()` en `includes()` voor zoekfunctionaliteit
+### JavaScript Dingen
+- **DOM Aanpassen**: `document.getElementById()` en `querySelectorAll()` om dingen op de pagina te veranderen.
+- **Events**: `onkeyup` om te reageren als je typt (voor het zoeken).
+- **Array Methoden**: `forEach()` om door een lijst met dingen te gaan.
+- **String Methoden**: `toLowerCase()` en `includes()` voor het zoeken.
 
-## 🚀 Gebruik & Installatie
+## Hoe je het gebruikt
 
-### Lokaal gebruik:
-1. Download alle bestanden naar één map
-2. Open `Index.html` in een moderne webbrowser
-3. Navigeer tussen pagina's via de menubalken
-4. Test de zoekfunctionaliteit op de Cheat Sheets pagina
+### Lokaal gebruiken:
+1. Download alle bestanden in één map.
+2. Open `Index.html` in een browser (zoals Chrome of Firefox).
+3. Klik op de knoppen in het menu om naar andere pagina's te gaan.
+4. Probeer de zoekfunctie op de Cheat Sheets pagina.
 
-### Vereisten:
-- **Browser**: Chrome, Firefox, Safari, Edge (moderne versies)
-- **JavaScript**: Moet ingeschakeld zijn voor zoekfunctionaliteit
-- **Internet**: Niet vereist, werkt volledig offline
+### Wat je nodig hebt:
+- **Browser**: Een moderne browser zoals Chrome, Firefox, Safari of Edge.
+- **JavaScript**: Moet aanstaan, anders werkt het zoeken niet.
+- **Internet**: Niet nodig, het werkt helemaal offline.
 
-## 📦 Bestandsstructuur
+## Bestanden
 
 ```
 Informatica_P4/
 ├── README.md
 └── Homepage/
-    ├── Index.html          # Homepage met welkomst en navigatie
-    ├── Sheets.html         # Cheat sheets met zoekfunctionaliteit
-    ├── Bronvermelding.html # Bronnen en code-uitleg
-    ├── About.html          # Extra bronnen pagina
-    ├── Style.css           # Alle styling en responsive design
-    └── giphy.gif          # Decorative afbeelding
+    ├── Index.html          # De hoofdpagina
+    ├── Sheets.html         # De pagina met cheat sheets en zoekfunctie
+    ├── Bronvermelding.html # Pagina met bronnen en uitleg
+    ├── About.html          # Extra pagina met bronnen
+    ├── Style.css           # Alle styling
+    └── giphy.gif          # Een plaatje
 ```
 
-### Bestand Details:
+### Details over de bestanden:
 
 **Index.html** (62 regels):
-- Homepage layout met welkomstbericht
-- CTA buttons naar andere secties
-- Fast-food lijst (voorbeeld content)
-- Footer met auteursinformatie
+- De homepage met een welkomsttekst.
+- Knoppen naar andere pagina's.
+- Een voorbeeldlijstje.
+- Info over wie het gemaakt heeft.
 
 **Sheets.html** (178 regels):
-- 9 verschillende programmeertaal cheat sheets
-- Live zoekfunctionaliteit met JavaScript
-- Responsive grid layout
-- Data attributen voor betere zoekresultaten
+- 9 cheat sheets voor verschillende programmeertalen.
+- Live zoekfunctie met JavaScript.
+- Responsive rooster layout.
+- Data attributen om beter te zoeken.
 
 **Style.css** (260 regels):
-- Complete dark theme styling
-- CSS Grid en Flexbox layouts
-- Hover animaties en transitions
-- Mobile-responsive media queries
-- Custom button en kaart styling
+- Alle styling voor het donkere thema.
+- CSS Grid en Flexbox voor de layout.
+- Hover animaties en overgangen.
+- Media queries om het responsive te maken.
+- Styling voor knoppen en kaartjes.
 
 **Bronvermelding.html** (92 regels):
-- Externe links naar nuttige bronnen
-- Code voorbeelden met syntax highlighting
-- Uitleg van zoekbalk implementatie
-- CSS button hover effect demonstratie
+- Links naar handige websites.
+- Code voorbeelden.
+- Uitleg over de zoekbalk.
+- Demo van het hover effect op knoppen.
 
-## 🔧 Geavanceerde Functionaliteiten
+## Extra coole dingen
 
-### Zoekbalk Implementatie
-**Werking**: Real-time filtering zonder page refresh
-**Techniek**: JavaScript DOM manipulation
-**Performance**: Efficiënt door gebruik van `includes()` method
+### Zoekbalk
+**Hoe het werkt**: Zoekt meteen zonder dat de pagina opnieuw laadt.
+**Techniek**: JavaScript die de pagina aanpast.
+**Snelheid**: Werkt snel door `includes()`.
 
-### Responsive Grid System
-**Techniek**: CSS Grid met `auto-fit` en `minmax()`
-**Voordeel**: Automatische aanpassing aan schermgrootte
-**Fallback**: Single column layout op mobiele apparaten
+### Responsive Rooster
+**Techniek**: CSS Grid met `auto-fit` en `minmax()`.
+**Voordeel**: Past zich automatisch aan aan hoe groot je scherm is.
+**Als het niet past**: Op telefoons staat alles onder elkaar.
 
-### CSS Animatie System
-**Hover effecten**: Transform, scale, translateY
-**Smooth transitions**: Consistent timing en easing
-**Performance**: Hardware-accelerated transforms
+### CSS Animaties
+**Hover effecten**: Dingen bewegen, worden groter.
+**Soepele overgangen**: Alles beweegt netjes.
+**Snelheid**: Gebruikt dingen die je computer snel kan doen.
 
-## 👨‍💻 Auteur & Ontwikkeling
+## Wie heeft dit gemaakt?
 
-**Gemaakt door**: Rens Windhorst  
-**Vak**: Informatica P4  
-**Tools gebruikt**: 
-- Visual Studio Code (development)
-- HTML (structuur)
-- CSS (styling & layout)  
-- Vanilla JavaScript (interactiviteit)
-- Git (versiebeheer)
+**Gemaakt door**: Rens Windhorst
+**Vak**: Informatica P4
+**Tools gebruikt**:
+- Visual Studio Code (om te programmeren)
+- HTML (voor de structuur)
+- CSS (voor de styling en layout)
+- Vanilla JavaScript (voor de interactieve dingen)
+- Git (om versies bij te houden)
 
 **Ontwikkeltijd**: Eindproject voor Informatica P4
-**Browser compatibiliteit**: Alle moderne browsers
-**Responsive design**: Desktop, tablet en mobiel
+**Browser compatibiliteit**: Werkt op alle moderne browsers
+**Responsive design**: Voor computer, tablet en mobiel
 
